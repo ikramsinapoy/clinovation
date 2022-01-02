@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: 160px 160px;
+
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+}
+/* .container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.logo{
+  height: 80px;
+}
+
+/* Page Navbar */
+.navIcon-container{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-left: 20px;
+  width: 55px;
+  height: 500px;
+
+  background-color: #F7F7F7;
+  /* background-color: #000; */
+  border: 1px solid #F7F7F7;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px #DFE0EB;
+}
+
+.navIcon-Item{
+  text-align: center;
+  background-color: #F7F7F7;
+  border-bottom: 3px solid #DFE0EB;
+  box-shadow: 0px 0px 2px 1px #DFE0EB;
+}
+
+.navIcon{
+  height: 24px;
+}
+
+/* Card List */
+
+.cardList-container{
+  width: 750px;
+  background-color: #F7F7F7;
+  /* background-color: #000; */
+  border: 1px solid #F7F7F7;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px #DFE0EB;
+}
+
+.cardList-container > Row{
+  width: 500px;
+}
+
+.listMedStaff-container{
+  width: 1000px;
+}
+
+.cardForm{
+  /* width: 1000px; */
+  padding: 15px;
+  background-color: #F7F7F7;
+  border: 1px solid #F7F7F7;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 1px #DFE0EB;
+}

@@ -1,0 +1,17 @@
+import React from 'react'
+import FormDoctorRegis from './components/FormDoctorRegis'
+import Logo from './img/Logo.svg'
+
+function Form() {
+    return (
+        <div>
+            <div class="d-flex justify-content-center">
+                <img src={Logo} className='logo'/>
+            </div>
+            
+            <FormDoctorRegis/>
+        </div>
+    )
+}
+
+export default Form
