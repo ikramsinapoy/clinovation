@@ -2,7 +2,7 @@ import React from "react";
 import {Modal,Button} from "react-bootstrap"
 import Logo from "../img/Logo.svg"
 import FormLogin from "./FormLogin"
-import FormRegis from "./FormRegis";
+// import FormRegis from "./FormMedstaffRegis";
 import FormForgetPass from "./FormForgetPass";
 import FormDoctorRegis from "./FormDoctorRegis";
 import Medstaff from "../img/health-care.svg"

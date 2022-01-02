@@ -79,4 +79,12 @@
   border: 1px solid #F7F7F7;
   border-radius: 5px;
   box-shadow: 0px 0px 2px 1px #DFE0EB;
+  margin-bottom: 20px;
 }
+
+.formRegis-container{
+  background-color: #F7F7F7;
+  padding: 20px 0px 30px 50px;
+  border-radius: 5px;
+}
+
