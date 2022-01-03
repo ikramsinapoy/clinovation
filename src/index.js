@@ -5,13 +5,14 @@ import ReactDOM from 'react-dom';
 import Menu from './Menu';
 import Form from './Form';
 import ListMedicalStaff from './ListMedicalStaff';
+import Prescription from './Prescription';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <Menu/> */}
-    <Form/>
+    <Prescription/>
     {/* <ListMedicalStaff/> */}
   </React.StrictMode>,
   document.getElementById('root')
