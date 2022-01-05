@@ -1,5 +1,6 @@
 import {React,useState} from "react";
 import {Form,Button, Row, Col,InputGroup} from "react-bootstrap"
+import { Link } from 'react-router-dom'
 
 function FormExample() {
     const [validated, setValidated] = useState(false);
@@ -36,7 +37,9 @@ function FormExample() {
             </Form.Group>
             <br/>
           {/* </Row>     */}
-          <Button type="submit">Login</Button>
+          <Link to="/dashboard">
+            <Button type="submit">Login</Button>
+          </Link>
         </Form>
       </div>
       

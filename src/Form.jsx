@@ -14,7 +14,7 @@ function Form() {
                 <img src={Logo} className='logo'/>
             </div>
             
-            <ListPrescription/>
+            <FormDoctorRegis/>
         </div>
     )
 }

@@ -1,0 +1,41 @@
+import React from 'react'
+import {Form,Button, Row, Col, Table} from "react-bootstrap"
+
+function MedicalRecordPatient() {
+    return (
+        <div>
+            <Row>
+                <Col md={6} className="m-auto formRegis-container">
+                    <Form>
+                        <div className="cardForm">
+                            <h5>Profile</h5>
+                            <div style={{borderTop : "2px solid black", padding : "10px"}}></div>
+                            <p><strong>Name           :</strong> Paul</p>
+                            <p><strong>NIK            :</strong> 33721239123010</p>
+                            <p><strong>Date of Birth  :</strong> 01-12-1997</p>
+                            <p><strong>Sex            :</strong> Male</p>
+                            <p><strong>Address        :</strong> Jl.Pattimura</p>
+                            <p><strong>Martial Status :</strong> Married</p>
+                            <p><strong>Patient Height :</strong> 180 cm</p>
+                            <p><strong>Patient Weight :</strong> 75 kg</p>
+
+                            <h5>Medical Record</h5>
+                            <div style={{borderTop : "2px solid black", padding : "10px"}}></div>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl aliquet 
+                                vestibulum rhoncus quis pellentesque. Sit ut pellentesque accumsan tellus 
+                                at diam accumsan faucibus. Adipiscing tortor, ac turpis sociis. Vitae eget 
+                                nisi gravida luctus dolor, id ornare. Placerat viverra lectus ullamcorper 
+                                metus, sagittis, eu. Cursus cursus congue sem ut eu in vitae amet ipsum.
+                            </p>
+                        </div>
+
+                        <Button type="submit" variant="warning">Back to All Patient</Button>
+                    </Form>
+                </Col>
+            </Row>
+        </div>
+    )
+}
+
+export default MedicalRecordPatient

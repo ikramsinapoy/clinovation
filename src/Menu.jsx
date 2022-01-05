@@ -4,12 +4,12 @@ import "./style/style.css"
 import { Container, Row, Col} from "react-bootstrap";
 import Login from "./components/Login"
 
+
 function Menu(){
     return(
         <div>
             <Row>
                 <Col>
-                    <Login/>
                     <CardDashboard />
                 </Col>
                 <Col className="pe-0 me-0">

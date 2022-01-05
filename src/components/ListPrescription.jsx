@@ -1,12 +1,36 @@
 import React from 'react'
-import {Table, Button, Container} from "react-bootstrap"
+import {Table, Button, Container, InputGroup,FormControl, Row} from "react-bootstrap"
+import { Link } from 'react-router-dom'
 
 function ListPrescription() {
     return (
-        <div>
+        <div className='mt-5'>
             <Container>
-                <Table responsive="sm">
+                <Row>
+                    <div class="d-flex bd-highlight">
+                        <div class="p-2 bd-highlight">
+                            <Link to="/add-prescription">
+                                <Button variant="success">Add New Prescription</Button>
+                            </Link>
+                        </div>
+                    
+                        <div class="ms-auto p-2 bd-highlight">
+                            <InputGroup className="mb-3" size="sm" style={{width: '300px'}}>
+                                <FormControl
+                                aria-label="Recipient's username"
+                                aria-describedby="basic-addon2"
+                                />
+                                <Button variant="outline-secondary" id="button-addon2">
+                                Search
+                                </Button>
+                            </InputGroup>
+                        </div>
+                    </div>
+                </Row>
+
+                <Table responsive="sm" className='mt-1'>
                     <thead>
+
                     <tr>
                         <th>Date</th>
                         <th>Doctor</th>
@@ -16,6 +40,9 @@ function ListPrescription() {
                     </tr>
                     </thead>
                     <tbody>
+                    {/* array.forEach(element => {
+                        
+                    }); */}
                     <tr>
                         <td></td>
                         <td></td>

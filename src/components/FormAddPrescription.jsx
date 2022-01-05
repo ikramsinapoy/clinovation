@@ -1,5 +1,6 @@
 import {React,useState} from "react";
 import {Form,Button, Row, Col} from "react-bootstrap"
+import { Link } from "react-router-dom";
 
 function FormAddPrescription() {
     const [validated, setValidated] = useState(false);
@@ -16,8 +17,7 @@ function FormAddPrescription() {
 
     return (
         <div>
-            <Row>
-               
+            <Row className='mt-5'>
                 <Col md={6} className="m-auto">
                     <h5>Add Prescription</h5>
                     <div style={{borderTop : "2px solid black", paddingBottom : "10px"}}></div>
@@ -97,9 +97,14 @@ function FormAddPrescription() {
 
                        
                     </div>
-
-                    <Button type="submit" variant="success">Save</Button>
-                    <Button type="submit" variant="danger">Delete</Button>
+                    <Link to="/prescription">
+                        <Button type="submit" variant="success"style={{marginRight : "20px"}}>Save</Button>
+                    </Link>
+                    
+                    <Link to="/prescription">
+                        <Button type="submit" variant="warning">Back</Button>   
+                    </Link>
+                    
                     </Form>
 
                 </Col>

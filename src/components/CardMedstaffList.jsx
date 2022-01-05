@@ -3,7 +3,6 @@ import { Button } from 'react-bootstrap'
 import Avatar from '../img/navbar/doctor.svg'
 
 function CardMedstaffList() {
-    
     return (
         <div>        
             <div className='cardList-container'>

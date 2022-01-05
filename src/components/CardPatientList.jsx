@@ -5,7 +5,8 @@ import Avatar from '../img/navbar/doctor.svg'
 function CardPatientList() {
     
     return (
-        <div>        
+        <div>  
+                  
             <div className='cardList-container'>
                 <div class="d-flex bd-highlight">
                     <div class="p-2 bd-highlight"><img src={Avatar} style={{height: "24px"}}/></div>
