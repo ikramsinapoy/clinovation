@@ -9,6 +9,8 @@ import ListPrescription from "./components/ListPrescription";
 import FormAddPrescription from "./components/FormAddPrescription";
 import MedRecPatientConsultation from "./components/MedRecPatientConsultation";
 import FormUpdateProfileDoctor from "./components/FormUpdateProfileDoctor";
+import CardListPatientDoctor from "./components/CardListPatientDoctor";
+import CardMedstaffList from "./components/CardMedstaffList";
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/add-prescription" element={<FormAddPrescription/>} />
           <Route path="/medical-record" element={<MedRecPatientConsultation/>} />
           <Route path="/update-profile" element={<FormUpdateProfileDoctor/>} />
+          <Route path="/list-patient" element={<CardMedstaffList/>} />
           <Route component={Error} />
         </Routes>
       </Router>

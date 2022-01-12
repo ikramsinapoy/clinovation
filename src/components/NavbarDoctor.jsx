@@ -30,7 +30,7 @@ function NavbarDoctor() {
                     <Link to="/prescription" className='m-auto'>
                         <img src={MedicalRecord} className='navIcon'/>
                     </Link>
-                    <Link to="/medical-record" className='m-auto'>
+                    <Link to="/list-patient" className='m-auto'>
                         <img src={Medical} className='navIcon'/>
                     </Link>
                     

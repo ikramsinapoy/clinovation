@@ -15,9 +15,9 @@ function Doctor() {
                     <Navbar/>
                 </Col>
                 
-                <Col md="11">
-                    <Container className='mt-2'>
-                        <div className="d-flex justify-content-end">
+                <Col md="11" className='mr-5'>
+                    <Container className='m-0 p-0'>
+                        <div className="d-flex justify-content-end mt-2">
                             <div className='d-flex flex-row'>
                                 <Link to="/update-profile">
                                     <img src={doctorIcon} style={{height : "36px"}}/>
@@ -26,7 +26,7 @@ function Doctor() {
                                 <h6 className="p-2">dr.Morris</h6>
                             </div>
                         </div>
-                        <div className='mt-5'>
+                        <div className='mt-4'>
                             <CardDashboardDoctor/>
                         </div>
                         

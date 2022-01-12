@@ -1,14 +1,16 @@
 import React from 'react'
-import {Form,Button, Row, Col, Table} from "react-bootstrap"
+import {Form,Button, Row, Col} from "react-bootstrap"
 import { Link } from 'react-router-dom'
 
 function MedRecPatientConsultation() {
     return (
         <div>
-           <Row>
-                <Col md={6} className="m-auto formRegis-container">
+           <Row >
+               
+                <Col md={6} className="m-auto my-2">
+                <h2>Patient Medical Record</h2>
                     <Form>
-                        <div className="cardForm">
+                        <div className="cardForm mt-4">
                             <h5>Profile</h5>
                             <div style={{borderTop : "2px solid black", padding : "10px"}}></div>
                             <p><strong>Name           :</strong> Paul</p>

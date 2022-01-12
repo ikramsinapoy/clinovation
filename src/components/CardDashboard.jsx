@@ -42,45 +42,45 @@ export default function CardDashboard() {
     const [modalShow, setModalShow] = React.useState(false);
 
     return (
-    <div className="container">
+    <div>
 
         <MyVerticallyCenteredModal
           show={modalShow}
           onHide={() => setModalShow(false)}
         />
         <div className="grid-container">
+          <div>
             <Card style={{ width: '160px', textAlign: 'center'}} onClick={() => setModalShow(true)}>
-                <div style={{ textAlign: 'center'}}>
+                <div>
                     <Card.Img variant="top" src={icondoctor} style={{ width: '100px'}}/>
                 </div>
                 <Card.Body>
                     <Card.Title style={{ fontWeight: 'Bold' }}>Doctor</Card.Title>
                 </Card.Body>
             </Card>
+          </div>
+          
+          <div>
             <Card style={{ width: '160px', textAlign: 'center' }}>
-                <div style={{ textAlign: 'center'}}>
-                    <Card.Img variant="top" src={iconmedstaff} style={{ width: '100px' }}/>
-                </div>
-                <Card.Body>
-                    <Card.Title style={{ fontWeight: 'Bold' }}>Medical staff</Card.Title>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '160px' , textAlign: 'center'}}>
-                <div style={{ textAlign: 'center'}}>
-                    <Card.Img variant="top" src={iconnurse} style={{ width: '100px' }}/>
-                </div>
-                <Card.Body>
-                    <Card.Title style={{ fontWeight: 'Bold' }}>Nurse</Card.Title>
-                </Card.Body>
-            </Card>
-            <Card style={{ width: '160px' , textAlign: 'center'}}>
-                <div style={{ textAlign: 'center'}}>
-                    <Card.Img variant="top" src={iconpatient} style={{ width: '100px' }}/>
-                </div>
-                <Card.Body>
-                    <Card.Title style={{ fontWeight: 'Bold' }}>Patient</Card.Title>
-                </Card.Body>
-            </Card>
+                  <div>
+                      <Card.Img variant="top" src={iconmedstaff} style={{ width: '100px' }}/>
+                  </div>
+                  <Card.Body>
+                      <Card.Title style={{ fontWeight: 'Bold' }}>Medical staff</Card.Title>
+                  </Card.Body>
+              </Card>
+          </div>
+            
+            <div className="grid-item" style={{textAlign: 'center'}}>
+              <Card style={{textAlign: 'center'}}>
+                  <div>
+                      <Card.Img variant="top" src={iconnurse} style={{ width: '100px' }}/>
+                  </div>
+                  <Card.Body>
+                      <Card.Title style={{ fontWeight: 'Bold' }}>Nurse</Card.Title>
+                  </Card.Body>
+              </Card>
+            </div>
         </div>
       </div>
     );

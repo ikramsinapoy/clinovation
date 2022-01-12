@@ -18,8 +18,9 @@ function FormUpdateProfileDoctor() {
 
     return (
         <div>
-            <Row className="mt-4">
-                <Col md={6} className="m-auto formRegis-container">
+            <Row className="my-4">
+                <Col md={6} className="m-auto">
+                    <h2 className="mb-3">Hello Doctor,</h2>
                     <Form noValidate validated={validated} onSubmit={handleSubmit} >
                     <div className="cardForm">
                     <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
@@ -172,15 +173,18 @@ function FormUpdateProfileDoctor() {
                         </Form.Group>
                     </div>
 
-                    <Link to="/dashboard">
-                        <Button type="submit" variant="success" style={{ marginRight : "10px"}}>Save</Button>
-                    </Link>
-                    
-                    <Link to="/dashboard">
-                        <Button variant="warning" style={{ marginRight : "10px"}}>Back to Home</Button>
-                    </Link>
-                    
-                    <Button variant="danger">Logout</Button>
+                    <div class="d-flex">
+                        <div class="mr-auto p-2">
+                            <Link to="/dashboard">
+                                <Button type="submit" variant="success" style={{ marginRight : "10px"}}>Save</Button>
+                            </Link>
+                            
+                            <Link to="/dashboard">
+                                <Button variant="warning" style={{ marginRight : "10px"}}>Back to Home</Button>
+                            </Link>
+                        </div>
+                        <div class="p-2"><Button variant="danger">Logout</Button></div>
+                    </div>
                     </Form>
                 </Col>
             </Row>
